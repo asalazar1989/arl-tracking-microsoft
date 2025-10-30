@@ -831,12 +831,11 @@
         // CONFIGURACIÓN EXCEL FILE ID
         // ============================================
         async function solicitarExcelFileId() {
-            // Intentar cargar desde localStorage
-            let fileId = localStorage.getItem('excelFileId');
-            
-            if (!fileId) {
-                // Solicitar al usuario
-                fileId = prompt(
+    // File ID pre-configurado
+    const fileId = '112226a3-2237-4dda-9876-ac94de7238e8';
+    
+    window.STATE.excelFileId = fileId;
+    console.log('✅ Excel File ID configurado');
                     'Por favor, ingresa el ID del archivo Excel de OneDrive/SharePoint:\n\n' +
                     'Puedes encontrarlo en la URL del archivo en OneDrive:\n' +
                     'https://onedrive.live.com/...?id=ESTE_ES_EL_ID\n\n' +
