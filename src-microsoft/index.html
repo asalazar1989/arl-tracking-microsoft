@@ -710,12 +710,12 @@
         // ============================================
         // CONFIGURACIÓN MSAL (Microsoft Authentication)
         // ============================================
-        const msalConfig = {
-            auth: {
-                clientId: "TU_CLIENT_ID_AQUI", // Reemplazar con tu Client ID
-                authority: "https://login.microsoftonline.com/common",
-                redirectUri: window.location.origin
-            },
+       const msalConfig = {
+    auth: {
+        clientId: "fd5c8d86-882e-4942-9b59-4fec3bc0d267", // ✅ Client ID que ya funciona
+        authority: "https://login.microsoftonline.com/common",
+        redirectUri: window.location.origin
+    },
             cache: {
                 cacheLocation: "localStorage",
                 storeAuthStateInCookie: false
@@ -831,11 +831,11 @@
         // CONFIGURACIÓN EXCEL FILE ID
         // ============================================
         async function solicitarExcelFileId() {
-    // File ID pre-configurado
+    // Excel File ID pre-configurado
     const fileId = '112226a3-2237-4dda-9876-ac94de7238e8';
     
     window.STATE.excelFileId = fileId;
-    console.log('✅ Excel File ID configurado');
+    console.log('✅ Excel File ID configurado:', fileId);
                     'Por favor, ingresa el ID del archivo Excel de OneDrive/SharePoint:\n\n' +
                     'Puedes encontrarlo en la URL del archivo en OneDrive:\n' +
                     'https://onedrive.live.com/...?id=ESTE_ES_EL_ID\n\n' +
