@@ -1,0 +1,133 @@
+# ===================================
+# .gitignore - Sistema ARL Microsoft
+# ===================================
+
+# ============ ARCHIVOS SENSIBLES ============
+# NUNCA subir estos archivos a GitHub
+src-microsoft/config/settings.json
+src-microsoft/config/*.json
+*.env
+.env
+.env.local
+.env.production
+
+# Credenciales y tokens
+**/credentials.json
+**/secrets.json
+**/token.json
+**/client-secret.txt
+
+# ============ NODE.JS ============
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# ============ ARCHIVOS DE SISTEMA ============
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+# ============ IDEs y EDITORES ============
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============ LOGS ============
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# ============ ARCHIVOS TEMPORALES ============
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+*.old
+
+# ============ COMPILADOS Y BUILD ============
+dist/
+build/
+out/
+*.js.map
+*.min.js
+*.min.css
+
+# ============ TESTING ============
+coverage/
+.nyc_output/
+*.test.js.snap
+
+# ============ AZURE ============
+.azure/
+local.settings.json
+
+# ============ OTROS ============
+# Archivos de backup
+*.backup
+*.orig
+
+# Archivos grandes
+*.xlsx
+*.xls
+!docs/excel-samples/*.xlsx
+!docs/excel-samples/*.xls
+
+# Documentos temporales
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Certificados SSL (si aplica)
+*.pem
+*.key
+*.cert
+
+# ============ NOTAS PERSONALES ============
+# Puedes crear archivos NOTES.md, TODO.md, etc. para uso personal
+NOTES.md
+TODO.md
+PERSONAL-*.md
+
+# ============ EXCLUIR DE .gitignore ============
+# Estos SI deben estar en el repo:
+# - README.md
+# - LICENSE
+# - .gitignore
+# - docs/**/*.md
+# - src-google-original/**
+# - src-microsoft/** (excepto config/settings.json)
